@@ -1,0 +1,39 @@
+h1{
+  font-family: 'Baloo Bhaijaan', cursive;
+  text-align: center;
+}
+table{
+  margin: auto;
+}
+td{
+
+  align-self: center;
+  height: 300px;
+  width: 150px;
+  border: 6px solid white;
+}
+#one{
+  background: #247BA0;
+  padding: 25px 25px 25px 25px;
+}
+
+#two{
+  background: #70C1B3;
+  padding: 25px 25px 25px 25px;
+}
+
+#three{
+  background: #B2DBBF;
+  padding: 25px 25px 25px 25px;
+}
+
+#four{
+  background: #F3FFBD;
+  padding: 25px 25px 25px 25px;
+
+}
+
+#five{
+  background: #FF1654;
+  padding: 25px 25px 25px 25px;
+}

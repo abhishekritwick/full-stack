@@ -1,0 +1,39 @@
+body{
+  background-color: #2e4468;
+  text-align: center;
+  border: 50px solid #68ddce;
+  border-top: 0px;
+  color: white;
+  font-family: 'Mukta Mahee', sans-serif;
+}
+
+p{
+  font-size: 20px;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 50px;
+}
+a{
+  color:red;
+}
+.fill{
+  font-size: 25px;
+  width: 250px;
+  height: 25px;
+}
+
+form{
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+#signup{
+  font-size: 1.5em;
+  text-align: justify;
+  background-color: #dd972e;
+  padding: 25px 12px;
+  /*height: 50px;
+  width: 100px;*/
+  margin-top: 10px;
+  border-radius: 20px;
+}
