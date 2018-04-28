@@ -14,7 +14,7 @@ h1{
 
 p{
 
-  font-family: monospace;
+  font-family: monospace; /* If we give multiple fonts here, it will pick the first available one i.e. a fall-back approach*/
 }
 
 body{
@@ -26,7 +26,7 @@ p{
 }
 
 #two{
-  font-size: 2.0em;
+  font-size: 2em;/* 1vh -> 1/100 of the viewport height, 1vw -> 1/100 of the viewport width */
 }
 
 
