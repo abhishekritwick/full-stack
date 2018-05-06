@@ -77,7 +77,20 @@ function stringTimes(str, n) {
 // luckySum(1, 13, 3) → 1
 
 function luckySum(a, b, c){
-
+  var sum = 0;
+  if(a===13)
+    return sum;
+  else
+    sum+=a;
+  if(b===13)
+      return sum;
+    else
+      sum+=b;
+  if(c===13)
+        return sum;
+      else
+        sum+=c;
+    return sum;
   //Code Goes Here
 }
 
@@ -97,6 +110,16 @@ function luckySum(a, b, c){
 
 function caught_speeding(speed, is_birthday){
   //Code Goes Here
+  var tktCount = 0
+  if (is_birthday){
+    speed = speed - 5;
+  }
+  if(speed>60 && speed<=80){
+    tktCount += 1;
+  }else if(speed>80){
+    tktCount += 2;
+  }
+  return tktCount;
 }
 
 
