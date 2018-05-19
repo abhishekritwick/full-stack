@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+{% extends "basicapp/base.html" %}
+{% load my_extras %}
+  {% block body_block %}
+    <h1>WELCOME TO INDEX!</h1>
+    <!-- <h2>This is index.html page showing!</h2> -->
+    <h1>{{ text|cuts:'w' }}</h1>
+    <h1>{{ number|test2:'' }}</h1>
+
+  {% endblock %}

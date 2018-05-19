@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>User List</title>
+    <link rel="stylesheet" href="{% static "css/mystyle.css" %}"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1>Here are your users:</h1>
+    {% if user_data %}
+    <ol>
+    {% for usr in user_data %}
+
+        <li>User Info</li>
+        <ul>
+          <li>First Name: {{usr.first_name}}</li>
+          <li>Last Name: {{usr.last_name}}</li>
+          <li>Email: {{usr.email}}</li>
+        </ul>
+
+      {% endfor %}
+      </ol>
+      {% else %}
+          <p>Uh Oh! No users found.</p>
+      {% endif %}
+      <!-- <div class="container">
+        <h1>Please Sign Up here!</h1>
+        <form method="post">
+          {{ user_form.as_p }}
+          {% csrf_token %}
+          <input type="submit" class="btn btn-primary" value="Submit">
+        </form>
+
+      </div> -->
+
+  </body>
+</html>
